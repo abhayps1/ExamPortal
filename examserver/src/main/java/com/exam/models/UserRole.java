@@ -12,4 +12,6 @@ public class UserRole {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long userRoleId;
 
+	// user
+	private User user;
 }
