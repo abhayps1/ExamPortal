@@ -20,7 +20,7 @@ public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String id;
+	private Long id;
 	private String username;
 	private String password;
 	private String firstName;
@@ -39,7 +39,7 @@ public class User {
 		super();
 	}
 
-	public User(String id, String username, String password, String firstName, String lastName, String email,
+	public User(Long id, String username, String password, String firstName, String lastName, String email,
 			String phone, Boolean enable, String profile) {
 		super();
 		this.id = id;
@@ -61,11 +61,11 @@ public class User {
 		this.userRoles = userRoles;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
