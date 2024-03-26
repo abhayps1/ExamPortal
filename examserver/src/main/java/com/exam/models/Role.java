@@ -15,7 +15,7 @@ import jakarta.persistence.Table;
 public class Role {
 
 	@Id
-	private Long roleId;
+	private long roleId;
 	private String roleName;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
@@ -39,11 +39,11 @@ public class Role {
 		this.userRoles = userRoles;
 	}
 
-	public Long getRoleId() {
+	public long getRoleId() {
 		return roleId;
 	}
 
-	public void setRoleId(Long roleId) {
+	public void setRoleId(long roleId) {
 		this.roleId = roleId;
 	}
 
